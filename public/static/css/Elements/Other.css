@@ -1,0 +1,3 @@
+.pointer:not([disabled]){
+    cursor: pointer;
+}

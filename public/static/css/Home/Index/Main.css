@@ -1,0 +1,72 @@
+.app{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("/assets/images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app > .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wrapper > form.primary-form{
+    width: 480px;
+    height: 730px;
+    background-color: var(--background-color);
+
+    padding: 40px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper > form.primary-form.login{
+    justify-content: start;
+}
+
+
+form.primary-form > .header{
+    text-align: center;
+}
+
+form.primary-form > .header > img{
+    margin-top: 20px;
+}
+
+
+form.primary-form > *, form.primary-form > * > .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form.primary-form > * > *:not([disabled]) + *:not([disabled]){
+    margin-top: 20px;
+}
+
+form.primary-form > * > .buttons > *:not([disabled]) + *:not([disabled]){
+    margin-top: 10px;
+}
+
+
+form.primary-form > .body > .buttons{
+    margin-top: 20px;
+}
+
+
+@media(width <= 700px){
+    .wrapper > form.primary-form{
+        width: 100%;
+        height: 100vh;
+    }
+}

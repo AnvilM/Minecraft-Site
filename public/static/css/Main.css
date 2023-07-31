@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Minecraft Ten";
+    src: url("/assets/fonts/Minecraft-ten.ttf");
+}
+
+@font-face {
+    font-family: "Minecraft Rus";
+    src: url("/assets/fonts/Minecraft-rus.ttf");
+}
+
+body{
+    margin: 0;
+    font-family: "Minecraft Rus";
+
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+    color: var(--text-color);
+
+    border: none;
+    outline: none;
+
+    text-decoration: none;
+}
+
+.root{
+    background-color: var(--background-color);
+    min-width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+
+}
+
+
+.wrapper{
+    width: 1400px;
+    max-width: 1400px;
+}

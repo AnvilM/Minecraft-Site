@@ -1,0 +1,45 @@
+.input{
+    transition: .1s ease-out border-bottom-color;
+}
+
+.input::placeholder{
+    font-size: 18px;
+}
+.primary-input{
+    background-color: transparent;
+    border-bottom: 3px white solid;
+    width: 300px;
+
+    padding: 2px 5px;
+}
+
+.primary-input:not([disabled]):focus{
+    border-bottom-color: var(--secondaty-color);
+}
+
+.accent-input{
+    background-color: transparent;
+    border-bottom: 2px white solid;
+    width: 300px;
+
+    padding: 2px 5px;
+}
+
+.accent-input:not([disabled]):focus{
+    border-bottom-color: var(--accent-color);
+}
+
+
+.warning-input{
+    background-color: transparent;
+    border-bottom: 2px white solid;
+    width: 300px;
+
+    padding: 2px 5px;
+}
+
+.warning-input:not([disabled]):focus{
+    border-bottom-color: var(--warning-color);
+}
+
+

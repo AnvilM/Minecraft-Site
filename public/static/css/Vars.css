@@ -1,0 +1,17 @@
+.root[data-theme = "dark"]{
+
+    --text-color: white;
+    --text-secondary-color: #8b8b8b;
+
+    --background-color: #151515;
+
+
+    --primary-color: #101010;
+    --secondaty-color: #08834A;
+
+
+    --accent-color: #F3D04B;
+
+    --warning-color: #C65D42;
+
+}
