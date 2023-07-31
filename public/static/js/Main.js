@@ -1,3 +1,5 @@
+$('input').attr('autocomplete', 'off')
+
 function close_show_down_to_up(close, show, duration){
     $(close).animate({marginTop: "+=100px", opacity: '0'}, duration).promise().done(function(){
         $(this).css('margin-top', 0)
@@ -26,4 +28,23 @@ function close_show_right_to_left(close, show, duration){
         $(show).animate({marginLeft: "0px", opacity: '1'}, duration)
 
     })
+}
+
+
+function Ajax(url, type, data){
+    var res = ''
+    $.ajax({
+        url:url,    //the page containing php script
+        type: type,    //request type,
+        dataType: 'text',
+        data: data,
+        async: false,
+        success:function(result){
+            res = result
+            
+            
+        }
+    });
+    return res
+
 }

@@ -12,20 +12,20 @@
 {block name="root"}
     <div class="app">
         <div class="wrapper">
-            <form action="/" method="POST" class="primary-form signup">
+            <form action="/Signup" method="POST" class="primary-form signup">
                 <div class="header">
                     <div class="title text-ten">Регистрация</div>
                     <img src="/assets/icons/icon.png" alt="" class="icon-xl">
                 </div>
                 <div class="body">
-                    <input type="text" class="input primary-input text-rus text-vlg" placeholder="Никнейм">
-                    <input type="text" class="input primary-input text-rus text-vlg" placeholder="Почта">
-                    <input type="password" class="input primary-input text-rus text-vlg" placeholder="Пароль">
-                    <input type="text" class="input primary-input text-rus text-vlg" placeholder="Повтор пароля">
+                    <input type="text" class="input primary-input text-rus text-vlg" placeholder="Никнейм" name="Login">
+                    <input type="text" class="input primary-input text-rus text-vlg" placeholder="Почта" name="Email">
+                    <input type="password" class="input primary-input text-rus text-vlg" placeholder="Пароль" name="Password">
+                    <input type="password" class="input primary-input text-rus text-vlg" placeholder="Повтор пароля" name="Re_Password">
 
                     <div class="buttons">
                         <button type="submit" class="button primary-button text-ten text-vlg pointer">Продолжить!</button>
-                        <div class="button primary-flat-button text-ten text-vlg pointer" id="Login">Войти в аккаунт</div>
+                        <div class="link text-rus text text-secondary self-left pointer" id="Login">Уже есть аккаунт</div>
                     </div>
                 </div>
                 <div class="footer">
@@ -33,18 +33,34 @@
                 </div>
             </form>
 
-            <form action="/" method="POST" class="primary-form login" style="display: none;">
+            <form class="primary-form login" style="display: none;">
                 <div class="header">
                     <div class="title text-ten">Авторизация</div>
                     <img src="/assets/icons/icon.png" alt="" class="icon-xl">
                 </div>
                 <div class="body">
                     <input type="text" class="input primary-input text-rus text-vlg" placeholder="Никнейм">
-                    <input type="text" class="input primary-input text-rus text-vlg" placeholder="Пароль">
+                    <input type="password" class="input primary-input text-rus text-vlg" placeholder="Пароль">
                     <div class="buttons">
                         <button type="submit" class="button primary-button text-ten text-vlg pointer">Продолжить!</button>
-                        <div class="button primary-flat-button text-ten text-vlg pointer" id="Signup">Регистрация</div>
+                        <div class="link text-rus text text-secondary self-left pointer">Забыли пароль?</div>
+                        <div class="link text-rus text text-secondary self-left pointer" id="Signup">Ещё нет аккаунта</div>
                     </div>
+                </div>
+            </form>
+
+            <form class="primary-form confirm" style="display: none;">
+                <div class="header">
+                    <div class="title text-ten">Подтверждение</div>
+                    <img src="/assets/icons/icon.png" alt="" class="icon-xl">
+                </div>
+                <div class="body">
+                    <div class="text-lg text-center text-attention">
+                        Для подтверждения регистрации, введите код, отправленнй вам на электронную почту 
+                    </div>
+                </div>
+                <div class="footer">
+                    <a href="" type="submit" class="button primary-button text-ten text-vlg pointer">Открыть почту</a>
                 </div>
             </form>
         </div>

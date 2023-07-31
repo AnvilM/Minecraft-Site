@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-07-31 16:11:08
-  from 'C:\Users\211an\Desktop\Minecraft\Minecraft-Site\resources\views\Includes\Main.tpl' */
+/* Smarty version 4.3.1, created on 2023-08-01 00:48:28
+  from 'C:\Users\211an\Desktop\Minecraft\Minecraft-Site\resources\views\Includes\Main_CSS.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_64c7b2eca30320_00202785',
+  'unifunc' => 'content_64c82c2c823623_34829048',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '6f17a1d70710bb672a2bad53da1da856806cfe68' => 
+    '08afbf2704e96c5a29419f1702b9260288c5d027' => 
     array (
-      0 => 'C:\\Users\\211an\\Desktop\\Minecraft\\Minecraft-Site\\resources\\views\\Includes\\Main.tpl',
-      1 => 1690809067,
+      0 => 'C:\\Users\\211an\\Desktop\\Minecraft\\Minecraft-Site\\resources\\views\\Includes\\Main_CSS.tpl',
+      1 => 1690840106,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64c7b2eca30320_00202785 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64c82c2c823623_34829048 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- CSS -->
 <link rel="stylesheet" href="/static/css/Vars.css">
 <link rel="stylesheet" href="/static/css/Main.css">
@@ -33,12 +33,5 @@ function content_64c7b2eca30320_00202785 (Smarty_Internal_Template $_smarty_tpl)
 
 <link rel="stylesheet" href="/static/css/Elements/Other.css">
 
-<!-- JS -->
-
-<?php echo '<script'; ?>
- src="/jquery.js"><?php echo '</script'; ?>
->
-<?php echo '<script'; ?>
- src="/static/js/Main.js"><?php echo '</script'; ?>
-><?php }
+<?php }
 }

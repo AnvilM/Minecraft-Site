@@ -13,6 +13,13 @@ $routes = [
             'Auth'
         ]
     ],
+
+
+    [
+        'Route' => 'Signup',
+        'Controller' => 'Auth',
+        'Action' => 'SendMail',
+    ],
    
 
 ];

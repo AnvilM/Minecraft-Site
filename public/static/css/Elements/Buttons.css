@@ -15,15 +15,15 @@
 
 /* PRIMARY */
 .primary-button{
-    background-color: var(--secondaty-color);
+    background-color: var(--secondary-color);
     height: 70px;
     padding: 0 20px;
 
-    border-bottom: 10px color-mix(in srgb, var(--secondaty-color) 70%, black 30%) solid;
+    border-bottom: 10px color-mix(in srgb, var(--secondary-color) 70%, black 30%) solid;
 }
 
 .primary-flat-button{
-    background-color: var(--secondaty-color);
+    background-color: var(--secondary-color);
     height: 70px;
     padding: 0 20px;
 }
@@ -58,6 +58,11 @@
     padding: 0 20px;
 }
 
+
+
+.small-button{
+    height: 60px;
+}
 
 
 

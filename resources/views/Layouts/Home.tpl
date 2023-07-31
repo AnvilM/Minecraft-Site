@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {include file="Includes/Main.tpl"}
+    {include file="Includes/Main_CSS.tpl"}
 
     {block name="page_css"}{/block}
 
@@ -16,5 +16,5 @@
     </div>
 </body>
 </html>
-
+{include file="Includes/Main_JS.tpl"}
 {block name="page_js"}{/block}

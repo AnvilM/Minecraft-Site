@@ -25,6 +25,14 @@
     color: var(--text-secondary-color);
 }
 
+.text-warning{
+    color: var(--warning-color);
+}
+
+.text-attention{
+    color: var(--attention-color);
+}
+
 
 
 
@@ -55,4 +63,16 @@
 
 .text-ten{
     font-family: "Minecraft Ten";
+}
+
+
+.link{
+    transition: .1s ease-out;
+    padding-bottom: 2px;
+    border-bottom: 2px var(--text-secondary-color) solid;
+}
+
+.link:not([disabled]):hover{
+    color: var(--secondary-color);
+    border-bottom: 2px var(--secondary-color) solid;
 }
