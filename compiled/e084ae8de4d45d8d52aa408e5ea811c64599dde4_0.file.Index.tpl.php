@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-08-01 01:08:14
+/* Smarty version 4.3.1, created on 2023-08-01 01:47:01
   from 'C:\Users\211an\Desktop\Minecraft\Minecraft-Site\resources\views\Home\Index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_64c830ce855f88_67700887',
+  'unifunc' => 'content_64c839e510d5f3_89240386',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e084ae8de4d45d8d52aa408e5ea811c64599dde4' => 
     array (
       0 => 'C:\\Users\\211an\\Desktop\\Minecraft\\Minecraft-Site\\resources\\views\\Home\\Index.tpl',
-      1 => 1690841292,
+      1 => 1690843616,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64c830ce855f88_67700887 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64c839e510d5f3_89240386 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
@@ -28,43 +28,45 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_162309845064c830ce8546d8_95932796', "page_css");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_206769381564c839e510bd37_47277923', "page_css");
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_74473832664c830ce8551a2_71845247', "page_js");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_123752438364c839e510c804_04476201', "page_js");
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_106721983964c830ce855967_11671689', "root");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_57272674164c839e510cfc9_84800407', "root");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "Layouts/Home.tpl");
 }
 /* {block "page_css"} */
-class Block_162309845064c830ce8546d8_95932796 extends Smarty_Internal_Block
+class Block_206769381564c839e510bd37_47277923 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_css' => 
   array (
-    0 => 'Block_162309845064c830ce8546d8_95932796',
+    0 => 'Block_206769381564c839e510bd37_47277923',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
     <link rel="stylesheet" href="/static/css/Home/Index/Main.css">
+    <link rel="stylesheet" href="/static/css/Home/Index/ConfirmCode.css">
+
 <?php
 }
 }
 /* {/block "page_css"} */
 /* {block "page_js"} */
-class Block_74473832664c830ce8551a2_71845247 extends Smarty_Internal_Block
+class Block_123752438364c839e510c804_04476201 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_js' => 
   array (
-    0 => 'Block_74473832664c830ce8551a2_71845247',
+    0 => 'Block_123752438364c839e510c804_04476201',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -73,17 +75,20 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
     <?php echo '<script'; ?>
  src="/static/js/Home/Index/Main.js"><?php echo '</script'; ?>
 >
+    <?php echo '<script'; ?>
+ src="/static/js/Home/Index/ConfirmCode.js"><?php echo '</script'; ?>
+>
 <?php
 }
 }
 /* {/block "page_js"} */
 /* {block "root"} */
-class Block_106721983964c830ce855967_11671689 extends Smarty_Internal_Block
+class Block_57272674164c839e510cfc9_84800407 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'root' => 
   array (
-    0 => 'Block_106721983964c830ce855967_11671689',
+    0 => 'Block_57272674164c839e510cfc9_84800407',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -137,9 +142,15 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                     <div class="text-lg text-center text-attention">
                         Для подтверждения регистрации, введите код, отправленнй вам на электронную почту 
                     </div>
+                    <fieldset name='number-code' data-number-code-form>
+                        <input type="number" min='0' max='9' name='number-code-0' data-number-code-input='0' required />
+                        <input type="number" min='0' max='9' name='number-code-1' data-number-code-input='1' required />
+                        <input type="number" min='0' max='9' name='number-code-2' data-number-code-input='2' required />
+                        <input type="number" min='0' max='9' name='number-code-3' data-number-code-input='3' required />
+                    </fieldset>
                 </div>
                 <div class="footer">
-                    <a href="" type="submit" class="button primary-button text-ten text-vlg pointer">Открыть почту</a>
+                    <a href="" target="_blank" type="submit" class="button primary-button text-ten text-vlg pointer">Открыть почту</a>
                 </div>
             </form>
         </div>

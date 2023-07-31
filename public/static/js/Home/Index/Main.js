@@ -16,9 +16,12 @@ $('form.signup').submit(function(e){
     data['Password'] = $(this).find('input[name="Password"]').val()
     data['Re_Password'] = $(this).find('input[name="Re_Password"]').val()
 
-    Ajax('/Signup', 'POST', data)
-
-    $('form.confirm > .body > div').text($('form.confirm > .body > div').text() + data['Email'])
-    $('form.confirm > .footer > a').attr('href', 'http://'+data['Email'].split('@').pop())
-    close_show_down_to_up('form.signup', 'form.confirm', 200)
+    if(Ajax('/Signup', 'POST', data) == 1){
+        $('form.confirm > .body > div').text($('form.confirm > .body > div').text() + data['Email'])
+        $('form.confirm > .footer > a').attr('href', 'http://'+data['Email'].split('@').pop())
+        close_show_down_to_up('form.signup', 'form.confirm', 200)
+    }
+    else{
+        alert('Одно или несколько полей заполнены неверно')
+    }
 })

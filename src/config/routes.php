@@ -20,6 +20,12 @@ $routes = [
         'Controller' => 'Auth',
         'Action' => 'SendMail',
     ],
+
+    [
+        'Route' => 'Signup/Confirm',
+        'Controller' => 'Auth',
+        'Action' => 'CheckToken',
+    ],
    
 
 ];
