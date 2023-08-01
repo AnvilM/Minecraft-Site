@@ -7,8 +7,13 @@ use src\core\Model;
 
 class AuthModel extends Model{
 
-    public function getUserFromLoginOrEmail($Login, $Email){
-        return $this->db->query("SELECT * FROM `users` WHERE `Login` = '$Login' OR `Email` = '$Email'");
+    public function getUserFromLogin($Login){
+        return $this->db->query("SELECT * FROM `users` WHERE `Login` = '$Login'");
+
+    }
+
+    public function getUserFromEmail($Email){
+        return $this->db->query("SELECT * FROM `users` WHERE `Email` = '$Email'");
 
     }
 

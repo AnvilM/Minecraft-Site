@@ -19,7 +19,7 @@
 
 .accent-input{
     background-color: transparent;
-    border-bottom: 2px white solid;
+    border-bottom: 3px white solid;
     width: 300px;
 
     padding: 2px 5px;
@@ -32,7 +32,7 @@
 
 .warning-input{
     background-color: transparent;
-    border-bottom: 2px white solid;
+    border-bottom: 3px white solid;
     width: 300px;
 
     padding: 2px 5px;
@@ -42,4 +42,6 @@
     border-bottom-color: var(--warning-color);
 }
 
-
+.err-input{
+    border-bottom-color: var(--warning-color);
+}

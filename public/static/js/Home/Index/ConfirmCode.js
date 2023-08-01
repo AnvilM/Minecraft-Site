@@ -36,7 +36,13 @@ const handleInput = ({target}) => {
     data['Email'] = $('form.signup').find('input[name="Email"]').val()
     data['Password'] = $('form.signup').find('input[name="Password"]').val()
     data['Re_Password'] = $('form.signup').find('input[name="Re_Password"]').val()
-    alert(Ajax('/Signup/Confirm', 'POST', data))
+    var Res = Ajax('/Signup/Confirm', 'POST', data)
+    if(Res == 1){
+      
+    }
+    else{
+      if(Res == 'Invalid code'){$('[data-number-code-input]').addClass('code-err-input')}
+    }
   }
 }
 

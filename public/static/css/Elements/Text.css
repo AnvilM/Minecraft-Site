@@ -65,6 +65,9 @@
     font-family: "Minecraft Ten";
 }
 
+.text-nlh{
+    line-height: 20px;
+}
 
 .link{
     transition: .1s ease-out;
