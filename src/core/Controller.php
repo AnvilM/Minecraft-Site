@@ -2,15 +2,20 @@
 
 namespace src\core;
 
+use mysqli;
 use src\core\View;
 use src\lib\Env;
+use src\lib\Sessions;
+use src\lib\User;
 
 abstract class Controller{
 
     public $View;
     public $Model;
     public $params;
+    public $User;
     public $Env;
+    public $Sessions;
 
     function __construct($params){
         
@@ -21,6 +26,11 @@ abstract class Controller{
 
         $this->Env = new Env();
     
+        $this->Sessions = new Sessions();
+        
+        $this->Sessions->sessionCheck();
+        $this->Sessions->sessionUpdate();
+
         $this->View = new View($params);
         
         
@@ -43,6 +53,8 @@ abstract class Controller{
             }
         }
     }
+
+
 
 
     

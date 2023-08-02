@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-08-01 17:43:57
+/* Smarty version 4.3.1, created on 2023-08-02 05:48:44
   from 'C:\Users\211an\Desktop\Minecraft\Minecraft-Site\resources\views\Home\Index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_64c91a2df289c5_14478553',
+  'unifunc' => 'content_64c9c40ce49261_91490416',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e084ae8de4d45d8d52aa408e5ea811c64599dde4' => 
     array (
       0 => 'C:\\Users\\211an\\Desktop\\Minecraft\\Minecraft-Site\\resources\\views\\Home\\Index.tpl',
-      1 => 1690901021,
+      1 => 1690944463,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64c91a2df289c5_14478553 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64c9c40ce49261_91490416 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
@@ -28,26 +28,26 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_214214293864c91a2df27162_98687079', "page_css");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_207072239964c9c40ce47896_93257536', "page_css");
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10097641464c91a2df27c02_14905603', "page_js");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_111326595964c9c40ce48466_53779459', "page_js");
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_102926640564c91a2df283b4_23978181', "root");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_145991721964c9c40ce48c37_53752294', "root");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "Layouts/Home.tpl");
 }
 /* {block "page_css"} */
-class Block_214214293864c91a2df27162_98687079 extends Smarty_Internal_Block
+class Block_207072239964c9c40ce47896_93257536 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_css' => 
   array (
-    0 => 'Block_214214293864c91a2df27162_98687079',
+    0 => 'Block_207072239964c9c40ce47896_93257536',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -61,12 +61,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block "page_css"} */
 /* {block "page_js"} */
-class Block_10097641464c91a2df27c02_14905603 extends Smarty_Internal_Block
+class Block_111326595964c9c40ce48466_53779459 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_js' => 
   array (
-    0 => 'Block_10097641464c91a2df27c02_14905603',
+    0 => 'Block_111326595964c9c40ce48466_53779459',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -78,20 +78,17 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
     <?php echo '<script'; ?>
  src="/static/js/Home/Index/ConfirmCode.js"><?php echo '</script'; ?>
 >
-    <?php echo '<script'; ?>
- src="/static/js/Home/Index/Unloader.js"><?php echo '</script'; ?>
->
 <?php
 }
 }
 /* {/block "page_js"} */
 /* {block "root"} */
-class Block_102926640564c91a2df283b4_23978181 extends Smarty_Internal_Block
+class Block_145991721964c9c40ce48c37_53752294 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'root' => 
   array (
-    0 => 'Block_102926640564c91a2df283b4_23978181',
+    0 => 'Block_145991721964c9c40ce48c37_53752294',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -147,7 +144,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                         Для подтверждения регистрации, введите код, отправленнй вам на электронную почту 
                     </div>
                     <fieldset name='number-code' data-number-code-form>
-                        <input type="number" min='0' max='9' name='number-code-0' data-number-code-input='0' required  />
+                        <input autofocus type="number" min='0' max='9' name='number-code-0' data-number-code-input='0' required  />
                         <input type="number" min='0' max='9' name='number-code-1' data-number-code-input='1' required  />
                         <input type="number" min='0' max='9' name='number-code-2' data-number-code-input='2' required  />
                         <input type="number" min='0' max='9' name='number-code-3' data-number-code-input='3' required  />

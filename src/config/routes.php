@@ -8,9 +8,8 @@ $routes = [
         'Action' => 'Index',
         'Layout' => 'Default',
         'View' => 'Index',
-        'Title' => 'Главная',
         'Middlewares' => [
-            'Auth'
+            'Guest'
         ]
     ],
 
@@ -19,12 +18,38 @@ $routes = [
         'Route' => 'Signup',
         'Controller' => 'Auth',
         'Action' => 'SendMail',
+        'Middlewares' => [
+            'Guest'
+        ]
     ],
 
     [
         'Route' => 'Signup/Confirm',
         'Controller' => 'Auth',
         'Action' => 'CheckToken',
+        'Middlewares' => [
+            'Guest'
+        ]
+    ],
+
+    [
+        'Route' => 'Login',
+        'Controller' => 'Auth',
+        'Action' => 'Login',
+        'Middlewares' => [
+            'Guest'
+        ]
+    ],
+
+
+    [
+        'Route' => 'Account',
+        'Controller' => 'Account',
+        'Action' => 'Index',
+        'View' => 'Index',
+        'Middlewares' => [
+            'Auth'
+        ]
     ],
    
 

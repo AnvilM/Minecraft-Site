@@ -10,7 +10,6 @@
 {block name="page_js"}
     <script src="/static/js/Home/Index/Main.js"></script>
     <script src="/static/js/Home/Index/ConfirmCode.js"></script>
-    <script src="/static/js/Home/Index/Unloader.js"></script>
 {/block}
 
 {block name="root"}
@@ -64,7 +63,7 @@
                         Для подтверждения регистрации, введите код, отправленнй вам на электронную почту 
                     </div>
                     <fieldset name='number-code' data-number-code-form>
-                        <input type="number" min='0' max='9' name='number-code-0' data-number-code-input='0' required  />
+                        <input autofocus type="number" min='0' max='9' name='number-code-0' data-number-code-input='0' required  />
                         <input type="number" min='0' max='9' name='number-code-1' data-number-code-input='1' required  />
                         <input type="number" min='0' max='9' name='number-code-2' data-number-code-input='2' required  />
                         <input type="number" min='0' max='9' name='number-code-3' data-number-code-input='3' required  />

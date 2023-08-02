@@ -17,7 +17,7 @@ $('form.signup').submit(function(e){
     data['Re_Password'] = $(this).find('input[name="Re_Password"]').val()
 
     var Res = Ajax('/Signup', 'POST', data);
-    if(Res == 1){
+    if(Res == ''){
         $('form.confirm > .body > div').text($('form.confirm > .body > div').text() + data['Email'])
         $('form.confirm > .footer > a').attr('href', 'http://'+data['Email'].split('@').pop())
         close_show_down_to_up('form.signup', 'form.confirm', 200)
