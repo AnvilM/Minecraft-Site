@@ -39,3 +39,18 @@ $('form.signup').submit(function(e){
     }
 })
 
+
+$('form.login').submit(function(e){
+    e.preventDefault()
+    var data = {}
+    data['Login'] = $(this).find('input[name="Login"]').val()
+    data['Password'] = $(this).find('input[name="Password"]').val()
+
+    var Res = Ajax('/Login', 'POST', data);
+    if(Res == ''){
+        location.href = '/Account'
+    }
+    else{
+        if(Res == 'Invalid login or password'){$(this).find('.err').text('Неверный логин или пароль')}
+    }
+})

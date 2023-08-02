@@ -89,6 +89,5 @@ Class AuthController extends Controller{
         $location = $location['country']['name_ru'].', '.$location['city']['name_ru'];
         
         $this->Model->addAuth($_POST['Login'], $uuid, time(), $location, $OS, $browser);
-        exit();
     }
 } 

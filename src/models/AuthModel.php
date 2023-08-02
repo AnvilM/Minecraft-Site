@@ -38,7 +38,7 @@ class AuthModel extends Model{
     }
 
     public function checkAuth($Login, $Password){
-        return $this->db->query("SELECT * FROM `users` WHERE `Login` = '$Login' AND `Password` = '$Password'");
+        return $this->db->query("SELECT * FROM `users` WHERE (`Login` = '$Login' OR `Email` = '$Login') AND `Password` = '$Password'");
     }
 
     public function addAuth($Login, $Session_id, $Login_date, $Location, $OS, $App){

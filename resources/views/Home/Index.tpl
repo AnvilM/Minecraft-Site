@@ -42,9 +42,10 @@
                     <div class="title text-ten">Авторизация</div>
                     <img src="/assets/icons/icon.png" alt="" class="icon-xl">
                 </div>
+                <div class="err text-warning text-rus text-lg text-center"></div>
                 <div class="body">
-                    <input type="text" class="input primary-input text-rus text-vlg" placeholder="Никнейм">
-                    <input type="password" class="input primary-input text-rus text-vlg" placeholder="Пароль">
+                    <input type="text" class="input primary-input text-rus text-vlg" placeholder="Никнейм" name="Login">
+                    <input type="password" class="input primary-input text-rus text-vlg" placeholder="Пароль" name="Password">
                     <div class="buttons">
                         <button type="submit" class="button primary-button text-ten text-vlg pointer">Продолжить!</button>
                         <div class="link text-rus text text-secondary self-left pointer">Забыли пароль?</div>
@@ -70,7 +71,7 @@
                     </fieldset>
                 </div>
                 <div class="footer">
-                    <a href="" target="_blank" type="submit" class="button primary-button text-ten text-vlg pointer">Открыть почту</a>
+                    <a href="http://gmail.com" target="_blank" type="submit" class="button primary-button text-ten text-vlg pointer">Открыть почту</a>
                 </div>
             </form>
         </div>

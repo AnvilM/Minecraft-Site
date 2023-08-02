@@ -23,3 +23,7 @@
 .icon-vsm{
     width: 16px;
 }
+
+.icon-pixel{
+    image-rendering: pixelated;
+}

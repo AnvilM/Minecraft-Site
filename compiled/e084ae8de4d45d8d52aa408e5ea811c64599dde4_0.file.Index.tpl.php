@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-08-02 05:48:44
+/* Smarty version 4.3.1, created on 2023-08-02 18:25:35
   from 'C:\Users\211an\Desktop\Minecraft\Minecraft-Site\resources\views\Home\Index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_64c9c40ce49261_91490416',
+  'unifunc' => 'content_64ca756f8ef901_98764068',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e084ae8de4d45d8d52aa408e5ea811c64599dde4' => 
     array (
       0 => 'C:\\Users\\211an\\Desktop\\Minecraft\\Minecraft-Site\\resources\\views\\Home\\Index.tpl',
-      1 => 1690944463,
+      1 => 1690982006,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64c9c40ce49261_91490416 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64ca756f8ef901_98764068 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
@@ -28,26 +28,26 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_207072239964c9c40ce47896_93257536', "page_css");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_199455344364ca756f8ede48_03052089', "page_css");
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_111326595964c9c40ce48466_53779459', "page_js");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_181621124964ca756f8eeb07_35900595', "page_js");
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_145991721964c9c40ce48c37_53752294', "root");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_204154023564ca756f8ef2e3_61196268', "root");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "Layouts/Home.tpl");
 }
 /* {block "page_css"} */
-class Block_207072239964c9c40ce47896_93257536 extends Smarty_Internal_Block
+class Block_199455344364ca756f8ede48_03052089 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_css' => 
   array (
-    0 => 'Block_207072239964c9c40ce47896_93257536',
+    0 => 'Block_199455344364ca756f8ede48_03052089',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -61,12 +61,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block "page_css"} */
 /* {block "page_js"} */
-class Block_111326595964c9c40ce48466_53779459 extends Smarty_Internal_Block
+class Block_181621124964ca756f8eeb07_35900595 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_js' => 
   array (
-    0 => 'Block_111326595964c9c40ce48466_53779459',
+    0 => 'Block_181621124964ca756f8eeb07_35900595',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -83,12 +83,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block "page_js"} */
 /* {block "root"} */
-class Block_145991721964c9c40ce48c37_53752294 extends Smarty_Internal_Block
+class Block_204154023564ca756f8ef2e3_61196268 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'root' => 
   array (
-    0 => 'Block_145991721964c9c40ce48c37_53752294',
+    0 => 'Block_204154023564ca756f8ef2e3_61196268',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -123,9 +123,10 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                     <div class="title text-ten">Авторизация</div>
                     <img src="/assets/icons/icon.png" alt="" class="icon-xl">
                 </div>
+                <div class="err text-warning text-rus text-lg text-center"></div>
                 <div class="body">
-                    <input type="text" class="input primary-input text-rus text-vlg" placeholder="Никнейм">
-                    <input type="password" class="input primary-input text-rus text-vlg" placeholder="Пароль">
+                    <input type="text" class="input primary-input text-rus text-vlg" placeholder="Никнейм" name="Login">
+                    <input type="password" class="input primary-input text-rus text-vlg" placeholder="Пароль" name="Password">
                     <div class="buttons">
                         <button type="submit" class="button primary-button text-ten text-vlg pointer">Продолжить!</button>
                         <div class="link text-rus text text-secondary self-left pointer">Забыли пароль?</div>
@@ -151,7 +152,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                     </fieldset>
                 </div>
                 <div class="footer">
-                    <a href="" target="_blank" type="submit" class="button primary-button text-ten text-vlg pointer">Открыть почту</a>
+                    <a href="http://gmail.com" target="_blank" type="submit" class="button primary-button text-ten text-vlg pointer">Открыть почту</a>
                 </div>
             </form>
         </div>
