@@ -1,4 +1,14 @@
+.wrapper{
+    width: 840px;
+}
+
 .root > .app{
     display: flex;
     justify-content: center;
 }
+
+.root > .app > .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+

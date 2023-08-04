@@ -4,6 +4,7 @@ namespace src\models;
 
 use mysqli;
 use src\core\Model;
+use src\lib\Funcs;
 
 class AuthModel extends Model{
 
@@ -33,7 +34,11 @@ class AuthModel extends Model{
     }
 
     public function addUser($Login, $Email, $Password){
-        $this->db->query("INSERT INTO `users` (`Login`, `Email`, `Password`) VALUES ('$Login', '$Email', '$Password')");
+        $uuid = Funcs::gen_uuid();
+        if(mysqli_num_rows($this->db->query("SELECT * FROM `users` WHERE `Uuid` = '$uuid'")) >= 1){
+            $this->addUser($Login, $Email, $Password);
+        }
+        $this->db->query("INSERT INTO `users` (`Uuid`, `Login`, `Email`, `Password`) VALUES ('$uuid', '$Login', '$Email', '$Password')");
 
     }
 
@@ -41,8 +46,16 @@ class AuthModel extends Model{
         return $this->db->query("SELECT * FROM `users` WHERE (`Login` = '$Login' OR `Email` = '$Login') AND `Password` = '$Password'");
     }
 
-    public function addAuth($Login, $Session_id, $Login_date, $Location, $OS, $App){
-        return $this->db->query("INSERT INTO `users_sessions` (`Login`, `Session_id`, `Login_date`, `Last_activity_date`, `Location`, `OS`, `App`) VALUES ('$Login', '$Session_id', '$Login_date', '$Login_date', '$Location', '$OS', '$App')");
+    public function addAuth($Login, $Login_date, $Location, $OS, $App){
+        $session_id = Funcs::gen_uuid();
+
+        $_SESSION['Login'] = [
+            'Session_id' => $session_id,
+            'Login' => $Login
+        ];
+        
+        if(mysqli_num_rows($this->db->query("SELECT * FROM `users_sessions` WHERE `Login` = '$Login' AND `Session_id` = '$session_id'")) >= 1){$this->addAuth($Login, $Login_date, $Location, $OS, $App);}
+        return $this->db->query("INSERT INTO `users_sessions` (`Login`, `Session_id`, `Login_date`, `Last_activity_date`, `Location`, `OS`, `App`) VALUES ('$Login', '$session_id', '$Login_date', '$Login_date', '$Location', '$OS', '$App')");
     }
     
 

@@ -41,8 +41,6 @@ function Ajax(url, type, data){
         async: false,
         success:function(result){
             res = result
-            
-            
         }
     });
     return res

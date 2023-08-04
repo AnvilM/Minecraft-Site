@@ -1,0 +1,21 @@
+.wrapper > .nav-bar > .nav-bar-button{
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar > .nav-bar-button{
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.nav-bar > .nav-bar-button:hover{
+    background-color: color-mix(in srgb, var(--primary-color) 40%, transparent 60%);
+}
+
+.nav-bar > .nav-bar-button.active{
+    background-color: var(--primary-color);
+}
+
+.nav-bar > .nav-bar-button + .nav-bar-button{
+    margin-top: 10px;   
+}

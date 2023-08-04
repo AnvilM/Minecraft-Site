@@ -65,6 +65,9 @@ Class AuthController extends Controller{
         if(!$this->Model->checkToken($_POST['Login'], $_POST['Email'], $_POST['Password'], $Token)){Funcs::Err('Invalid code');}
         $this->Model->addUser($_POST['Login'], $_POST['Email'], $_POST['Password']);
 
+
+        $this->Model->GenSkin();
+
     } 
 
     public function LoginAction(){
@@ -74,20 +77,15 @@ Class AuthController extends Controller{
         $_POST['Password'] = hash('sha256', $_POST['Password']);
         if(mysqli_num_rows($this->Model->checkAuth($_POST['Login'], $_POST['Password'])) < 1){Funcs::Err('Invalid login or password');}
 
-        $uuid = Funcs::gen_uuid();
         $OS = UserInfo::getOS();
         $browser = UserInfo::getBrowser();
         $ip = UserInfo::getIP();
 
-        $_SESSION['Login'] = [
-            'Session_id' => $uuid,
-            'Login' => $_POST['Login']
-        ];
 
         $this->SxGeo = new SxGeo($GLOBALS['ROOT'].'src/config/SxGeoCity.dat', SXGEO_BATCH | SXGEO_MEMORY);
         $location = $this->SxGeo->getCityFull($ip);
         $location = $location['country']['name_ru'].', '.$location['city']['name_ru'];
         
-        $this->Model->addAuth($_POST['Login'], $uuid, time(), $location, $OS, $browser);
+        $this->Model->addAuth($_POST['Login'], time(), $location, $OS, $browser);
     }
 } 
