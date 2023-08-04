@@ -2,6 +2,8 @@
 
 namespace src\lib;
 
+use src\lib\SxGeo;
+
 class UserInfo{
 
     public static function getIP(){
@@ -70,6 +72,11 @@ class UserInfo{
             }
         }
         return $browser;
+    }
+
+    public static function getLocation(){
+        $SxGeo = new SxGeo($GLOBALS['ROOT'].'src/config/SxGeoCity.dat', SXGEO_BATCH | SXGEO_MEMORY);
+        return $SxGeo->getCityFull(UserInfo::getIP());
     }
 
     

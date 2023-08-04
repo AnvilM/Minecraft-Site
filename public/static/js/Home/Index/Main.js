@@ -47,6 +47,7 @@ $('form.login').submit(function(e){
     data['Password'] = $(this).find('input[name="Password"]').val()
 
     var Res = Ajax('/Login', 'POST', data);
+    alert(Res)
     if(Res == ''){
         location.href = '/Account'
     }
