@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-08-06 15:21:47
+/* Smarty version 4.3.1, created on 2023-08-06 16:57:51
   from 'D:\Devs\Minecraft\Minecraft-Site\resources\views\Layouts\Account.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_64cf905b9758d0_95250138',
+  'unifunc' => 'content_64cfa6df4a8d08_69350549',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '30f4ddd29957bb1a8e1d25f63bc4f6b0d949803b' => 
     array (
       0 => 'D:\\Devs\\Minecraft\\Minecraft-Site\\resources\\views\\Layouts\\Account.tpl',
-      1 => 1691324385,
+      1 => 1691330269,
       2 => 'file',
     ),
   ),
@@ -22,8 +22,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:Includes/Main_JS.tpl' => 1,
   ),
 ),false)) {
-function content_64cf905b9758d0_95250138 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\Devs\\Minecraft\\Minecraft-Site\\libs\\smarty\\libs\\plugins\\function.env.php','function'=>'smarty_function_env',),));
+function content_64cfa6df4a8d08_69350549 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\Devs\\Minecraft\\Minecraft-Site\\libs\\smarty\\libs\\plugins\\function.env.php','function'=>'smarty_function_env',),1=>array('file'=>'D:\\Devs\\Minecraft\\Minecraft-Site\\libs\\smarty\\libs\\plugins\\function.get_avatar.php','function'=>'smarty_function_get_avatar',),));
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -39,7 +39,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
     <link rel="stylesheet" href="/static/css/Account/Main.css">
     <link rel="stylesheet" href="/static/css/Account/Header.css">
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_93785339664cf905b9711b8_30319801', "page_css");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_185581702164cfa6df4a37f4_71910348', "page_css");
 ?>
 
 
@@ -54,28 +54,29 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_93785339664cf905b9
                     <img src="/assets/icons/icon.png" alt="" class="icon-lg">
                     <div class="title text-ten text-lg">Crate</div>
                 </div>
-                <div class="avatar">
-                    <img src="/assets/Users/Default/Avatar.png" alt="" class="icon-lg icon-pixel">
+                <div class="avatar pointer" href="https://google.com" hrefType="/Account">
+                    <img src="<?php echo smarty_function_get_avatar(array(),$_smarty_tpl);?>
+" alt="" class="icon-lg icon-pixel">
                 </div>
             </div>
         </div>
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_175475760564cf905b974686_85733482', "root");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_55155595364cfa6df4a7a80_29160165', "root");
 ?>
 
     </div>
 </body>
 </html>
 <?php $_smarty_tpl->_subTemplateRender("file:Includes/Main_JS.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_93476496464cf905b975362_26391007', "page_js");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_116265819964cfa6df4a8746_17260064', "page_js");
 }
 /* {block "page_css"} */
-class Block_93785339664cf905b9711b8_30319801 extends Smarty_Internal_Block
+class Block_185581702164cfa6df4a37f4_71910348 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_css' => 
   array (
-    0 => 'Block_93785339664cf905b9711b8_30319801',
+    0 => 'Block_185581702164cfa6df4a37f4_71910348',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -83,12 +84,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block "page_css"} */
 /* {block "root"} */
-class Block_175475760564cf905b974686_85733482 extends Smarty_Internal_Block
+class Block_55155595364cfa6df4a7a80_29160165 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'root' => 
   array (
-    0 => 'Block_175475760564cf905b974686_85733482',
+    0 => 'Block_55155595364cfa6df4a7a80_29160165',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -96,12 +97,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block "root"} */
 /* {block "page_js"} */
-class Block_93476496464cf905b975362_26391007 extends Smarty_Internal_Block
+class Block_116265819964cfa6df4a8746_17260064 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_js' => 
   array (
-    0 => 'Block_93476496464cf905b975362_26391007',
+    0 => 'Block_116265819964cfa6df4a8746_17260064',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

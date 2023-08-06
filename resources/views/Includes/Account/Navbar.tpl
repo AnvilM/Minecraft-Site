@@ -7,10 +7,13 @@
     <div class="nav-bar-button pointer" id="Customization">
         <div class="text-vlg text-rus">Персонализация</div>
     </div>
+    <div class="nav-bar-button pointer" id="Security">
+        <div class="text-vlg text-rus">Безопасность</div>
+    </div>
     <div class="nav-bar-button pointer" id="Data">
         <div class="text-vlg text-rus">Данные</div>
     </div>
-    <div class="nav-bar-button pointer" id="Security">
-        <div class="text-vlg text-rus">Безопасность</div>
+    <div class="nav-bar-button pointer" id="Logout">
+        <div class="text-vlg text-rus text-warning">Выйти</div>
     </div>
 </div>

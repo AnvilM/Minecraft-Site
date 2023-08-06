@@ -20,8 +20,8 @@
                     <img src="/assets/icons/icon.png" alt="" class="icon-lg">
                     <div class="title text-ten text-lg">Crate</div>
                 </div>
-                <div class="avatar">
-                    <img src="/assets/Users/Default/Avatar.png" alt="" class="icon-lg icon-pixel">
+                <div class="avatar pointer" href="https://google.com" hrefType="/Account">
+                    <img src="{get_avatar}" alt="" class="icon-lg icon-pixel">
                 </div>
             </div>
         </div>
