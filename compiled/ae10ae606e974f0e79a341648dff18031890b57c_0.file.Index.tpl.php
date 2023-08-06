@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-08-04 03:06:50
+/* Smarty version 4.3.1, created on 2023-08-06 15:16:55
   from 'D:\Devs\Minecraft\Minecraft-Site\resources\views\Account\Index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_64cc411a9c6fb8_44114565',
+  'unifunc' => 'content_64cf8f37714403_48675396',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ae10ae606e974f0e79a341648dff18031890b57c' => 
     array (
       0 => 'D:\\Devs\\Minecraft\\Minecraft-Site\\resources\\views\\Account\\Index.tpl',
-      1 => 1691107609,
+      1 => 1691323972,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:Includes/Account/Navbar.tpl' => 1,
   ),
 ),false)) {
-function content_64cc411a9c6fb8_44114565 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64cf8f37714403_48675396 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
@@ -29,26 +29,26 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_29176627064cc411a9c37a3_25051474', "page_css");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_70408211264cf8f37710b47_76628842', "page_css");
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_197733712964cc411a9c42b2_41184278', "page_js");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_190514202964cf8f37711622_58887994', "page_js");
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_81987463764cc411a9c4aa9_85012477', "root");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_186485527664cf8f37711df1_57370770', "root");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "Layouts/Account.tpl");
 }
 /* {block "page_css"} */
-class Block_29176627064cc411a9c37a3_25051474 extends Smarty_Internal_Block
+class Block_70408211264cf8f37710b47_76628842 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_css' => 
   array (
-    0 => 'Block_29176627064cc411a9c37a3_25051474',
+    0 => 'Block_70408211264cf8f37710b47_76628842',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -60,12 +60,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block "page_css"} */
 /* {block "page_js"} */
-class Block_197733712964cc411a9c42b2_41184278 extends Smarty_Internal_Block
+class Block_190514202964cf8f37711622_58887994 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_js' => 
   array (
-    0 => 'Block_197733712964cc411a9c42b2_41184278',
+    0 => 'Block_190514202964cf8f37711622_58887994',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -79,12 +79,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block "page_js"} */
 /* {block "root"} */
-class Block_81987463764cc411a9c4aa9_85012477 extends Smarty_Internal_Block
+class Block_186485527664cf8f37711df1_57370770 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'root' => 
   array (
-    0 => 'Block_81987463764cc411a9c4aa9_85012477',
+    0 => 'Block_186485527664cf8f37711df1_57370770',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
