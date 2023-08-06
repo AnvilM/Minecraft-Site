@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-08-06 17:23:11
+/* Smarty version 4.3.1, created on 2023-08-06 17:28:26
   from 'D:\Devs\Minecraft\Minecraft-Site\resources\views\Includes\Account\Navbar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_64cfaccfd0fe89_78875749',
+  'unifunc' => 'content_64cfae0a8581f0_71055406',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64cfaccfd0fe89_78875749 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64cfae0a8581f0_71055406 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/static/css/Account/Navbar.css">
 
 <div class="nav-bar">

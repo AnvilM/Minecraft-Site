@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-08-02 22:22:21
+/* Smarty version 4.3.1, created on 2023-08-06 17:28:26
   from 'D:\Devs\Minecraft\Minecraft-Site\resources\views\Includes\Main_CSS.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_64caacedf397e1_49366408',
+  'unifunc' => 'content_64cfae0a81f509_18346639',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64caacedf397e1_49366408 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64cfae0a81f509_18346639 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- CSS -->
 <link rel="stylesheet" href="/static/css/Vars.css">
 <link rel="stylesheet" href="/static/css/Main.css">
