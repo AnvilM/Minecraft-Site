@@ -14,4 +14,8 @@ Class AccountController extends Controller{
    
         $this->View->render();
     }   
+
+    public function LogoutAction(){
+        $this->Model->Logout();
+    }
 } 

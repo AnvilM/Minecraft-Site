@@ -2,6 +2,7 @@
 
 
 $routes = [
+    // Home
     [
         'Route' => '',
         'Controller' => 'Home',
@@ -13,6 +14,7 @@ $routes = [
         ]
     ],
 
+    // Login / Signup
 
     [
         'Route' => 'Signup',
@@ -42,6 +44,9 @@ $routes = [
     ],
 
 
+
+    // Account
+
     [
         'Route' => 'Account',
         'Controller' => 'Account',
@@ -52,7 +57,23 @@ $routes = [
         ]
     ],
 
+    [
+        'Route' => 'Account/Logout',
+        'Controller' => 'Account',
+        'Action' => 'Logout',
+        'Middlewares' => [
+            'Auth'
+        ]
+    ],
 
+    
+
+
+
+
+
+
+    //API
     [
         'Route' => 'API/get.avatar',
         'Controller' => 'API',
