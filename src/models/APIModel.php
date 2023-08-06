@@ -15,7 +15,7 @@ class APIModel extends Model{
 
     public function get_avatar(){
 
-        $skin = imagecreatefrompng(file_exists($GLOBALS['ROOT'].'public/assets/Users/Skins/'.$_GET['uuid'].'.png') ? $GLOBALS['ROOT'].'public/assets/Users/Skins/'.$_GET['uuid'].'.png' : $GLOBALS['ROOT'].'public/assets/Users/Default/Skin.png');
+        $skin = imagecreatefrompng('http://'.$_SERVER['SERVER_NAME'].'/API/get.skin?uuid='.$_GET['uuid']);
         imagesavealpha($skin, true);
         $rect = [
             'x' => 8, 
