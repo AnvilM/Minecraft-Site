@@ -15,6 +15,23 @@ Class AccountController extends Controller{
         $this->View->render();
     }   
 
+    public function CustomizationAction(){
+
+        $this->View->render();
+    }
+
+    public function SecurityAction(){
+
+        $this->View->render();
+    }
+
+    public function StatsAction(){
+
+        $this->View->render();
+    }
+
+    
+
     public function LogoutAction(){
         $this->Model->Logout();
     }

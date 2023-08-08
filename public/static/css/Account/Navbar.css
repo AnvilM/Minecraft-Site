@@ -1,23 +1,27 @@
-.wrapper > .nav-bar > .nav-bar-button{
+.nav-bar > .nav-bar-fixed{
+    position: fixed;
+}
+
+.wrapper > .nav-bar > .nav-bar-fixed > .nav-bar-button{
     display: flex;
     align-items: center;
 }
 
-.nav-bar > .nav-bar-button{
+.nav-bar > .nav-bar-fixed > .nav-bar-button{
     padding: 10px 20px;
     border-radius: 5px;
 
     transition: .1s ease-out background-color;
 }
 
-.nav-bar > .nav-bar-button:hover{
+.nav-bar > .nav-bar-fixed > .nav-bar-button:hover{
     background-color: color-mix(in srgb, var(--primary-color) 40%, #ffffff1a 60%);
 }
 
-.nav-bar > .nav-bar-button.active{
+.nav-bar > .nav-bar-fixed > .nav-bar-button.active{
     background-color: var(--primary-color);
 }
 
-.nav-bar > .nav-bar-button + .nav-bar-button{
+.nav-bar > .nav-bar-fixed > .nav-bar-button + .nav-bar-button{
     margin-top: 15px;   
 }

@@ -2,11 +2,11 @@
     display: flex;
     justify-content: center;
 
-    width: 100%;
+    width: 100vw;
     height: 52px;
     background-color: var(--primary-color);
 
-    margin-bottom: 20px;
+    position: fixed;
 }
 .root > .header > .wrapper{
     display: flex;

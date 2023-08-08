@@ -57,6 +57,37 @@ $routes = [
         ]
     ],
 
+
+    [
+        'Route' => 'Account/Customization',
+        'Controller' => 'Account',
+        'Action' => 'Customization',
+        'View' => 'Customization',
+        'Middlewares' => [
+            'Auth'
+        ]
+    ],
+
+    [
+        'Route' => 'Account/Security',
+        'Controller' => 'Account',
+        'Action' => 'Security',
+        'View' => 'Security',
+        'Middlewares' => [
+            'Auth'
+        ]
+    ],
+
+    [
+        'Route' => 'Account/Stats',
+        'Controller' => 'Account',
+        'Action' => 'Stats',
+        'View' => 'Stats',
+        'Middlewares' => [
+            'Auth'
+        ]
+    ],
+
     [
         'Route' => 'Account/Logout',
         'Controller' => 'Account',

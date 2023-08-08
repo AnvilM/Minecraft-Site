@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-08-06 17:28:26
+/* Smarty version 4.3.1, created on 2023-08-06 17:36:45
   from 'D:\Devs\Minecraft\Minecraft-Site\resources\views\Includes\Main_JS.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_64cfae0a8917f5_50779571',
+  'unifunc' => 'content_64cfaffdb3dfb9_31815756',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '74ea1e840dd69506566769c77f23779b46fc4b7a' => 
     array (
       0 => 'D:\\Devs\\Minecraft\\Minecraft-Site\\resources\\views\\Includes\\Main_JS.tpl',
-      1 => 1691329419,
+      1 => 1691332591,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64cfae0a8917f5_50779571 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64cfaffdb3dfb9_31815756 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  src="/jquery.js"><?php echo '</script'; ?>
 >
