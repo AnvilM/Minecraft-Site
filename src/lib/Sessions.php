@@ -41,9 +41,10 @@ class Sessions{
         $Login_date = time();
         $OS = UserInfo::getOS();
         $App = UserInfo::getBrowser();
+        $Ip = UserInfo::getIP();
 
         if(mysqli_num_rows($this->db->query("SELECT * FROM `users_sessions` WHERE `Uuid` = '$uuid' AND `Session_id` = '$Session_id'")) >= 1){$this->sessionAdd($uuid);}
-        $this->db->query("INSERT INTO `users_sessions` (`Uuid`, `Session_id`, `Login_date`, `Last_activity_date`, `Location`, `OS`, `App`) VALUES ('$uuid', '$Session_id', '$Login_date', '$Login_date', '$Location', '$OS', '$App')");
+        $this->db->query("INSERT INTO `users_sessions` (`Uuid`, `Session_id`, `Login_date`, `Last_activity_date`, `Location`, `OS`, `App`, `Ip`) VALUES ('$uuid', '$Session_id', '$Login_date', '$Login_date', '$Location', '$OS', '$App', '$Ip')");
         
         return $Session_id;
     }

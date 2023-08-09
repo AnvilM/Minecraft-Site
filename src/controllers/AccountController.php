@@ -6,6 +6,7 @@ namespace src\controllers;
 use mysqli;
 use src\core\Controller;
 use src\core\Model;
+use src\lib\Funcs;
 
 Class AccountController extends Controller{
 
@@ -24,6 +25,22 @@ Class AccountController extends Controller{
 
         $this->View->render();
     }
+
+
+
+    public function Security_SessionsAction(){
+        $sessions = $this->Model->get_sessions();
+
+
+        $this->View->render(['sessions' => $sessions]);
+    }
+
+    public function Security_Sessions_Close_AllAction(){
+        $this->Model->close_all_sessions();
+        Funcs::Redirect('/Account/Security');
+    }
+
+
 
     public function StatsAction(){
 

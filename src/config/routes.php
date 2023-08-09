@@ -62,7 +62,7 @@ $routes = [
         'Route' => 'Account/Customization',
         'Controller' => 'Account',
         'Action' => 'Customization',
-        'View' => 'Customization',
+        'View' => 'Customization/Index',
         'Middlewares' => [
             'Auth'
         ]
@@ -72,11 +72,33 @@ $routes = [
         'Route' => 'Account/Security',
         'Controller' => 'Account',
         'Action' => 'Security',
-        'View' => 'Security',
+        'View' => 'Security/Index',
         'Middlewares' => [
             'Auth'
         ]
     ],
+
+
+
+    [
+        'Route' => 'Account/Security/Sessions',
+        'Controller' => 'Account',
+        'Action' => 'Security_Sessions',
+        'View' => 'Security/Sessions',
+        'Middlewares' => [
+            'Auth'
+        ]
+    ],
+
+    [
+        'Route' => 'Account/Security/Sessions/Close_All',
+        'Controller' => 'Account',
+        'Action' => 'Security_Sessions_Close_All',
+        'Middlewares' => [
+            'Auth'
+        ]
+    ],
+
 
     [
         'Route' => 'Account/Stats',

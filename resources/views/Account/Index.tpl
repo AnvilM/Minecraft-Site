@@ -6,7 +6,7 @@
 {/block}
 
 {block name="page_js"}
-    <script>$('.nav-bar > .nav-bar-fixed > #Main').addClass('active')</script>
+    <script>$('.nav-bar > .nav-bar-fixed > #Main').addClass('active').attr('disabled', true)</script>
 {/block}
 
 {block name="root"}

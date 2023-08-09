@@ -14,7 +14,7 @@ class UserInfo{
 
         $user_agent = $_SERVER['HTTP_USER_AGENT'];
     
-        $os_platform =   "Bilinmeyen İşletim Sistemi";
+        $os_platform =   "Windows";
         $os_array =   array(
             '/windows nt 10/i'      =>  'Windows 10',
             '/windows nt 6.3/i'     =>  'Windows 8.1',
@@ -31,14 +31,14 @@ class UserInfo{
             '/win16/i'              =>  'Windows 3.11',
             '/macintosh|mac os x/i' =>  'Mac OS X',
             '/mac_powerpc/i'        =>  'Mac OS 9',
-            '/linux/i'              =>  'Linux',
             '/ubuntu/i'             =>  'Ubuntu',
             '/iphone/i'             =>  'iPhone',
             '/ipod/i'               =>  'iPod',
             '/ipad/i'               =>  'iPad',
             '/android/i'            =>  'Android',
             '/blackberry/i'         =>  'BlackBerry',
-            '/webos/i'              =>  'Mobile'
+            '/webos/i'              =>  'Mobile',
+            '/linux/i'              =>  'Linux'
         );
     
         foreach ( $os_array as $regex => $value ) { 

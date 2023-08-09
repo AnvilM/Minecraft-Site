@@ -6,7 +6,7 @@
 {/block}
 
 {block name="page_js"}
-    <script>$('.nav-bar > .nav-bar-fixed > #Security').addClass('active')</script>
+    <script>$('.nav-bar > .nav-bar-fixed > #Security').addClass('active').attr('disabled', true)</script>
 {/block}
 
 {block name="root"}
@@ -46,14 +46,14 @@
                         <div class="text-rus text-sm">Сеансы</div>
                         <div class="text-rus text-vsm text-secondary">Ваши сеансы</div>
                     </div>
-                    <div class="el pointer text-nlh">
+                    <div class="el pointer text-nlh" href="/Account/Security/Sessions">
                         <img src="{icon icon='phone'}" alt="" class="icon icon-pixel">
                         <div class="text">
                             <div class="text">Список сеансов</div>
                             <div class="text-vsm text-secondary">Открыть список сессий</div>
                         </div>
                     </div>
-                    <div class="el pointer text-nlh">
+                    <div class="el pointer text-nlh" href="/Account/Security/Sessions/Close_All">
                         <img src="{icon icon='exit-warning'}" alt="" class="icon icon-pixel">
                         <div class="text">
                             <div class="text text-warning">Завершить сеансы</div>
