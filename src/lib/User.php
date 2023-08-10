@@ -11,6 +11,7 @@ class User{
     public function Logout(){
         if($this->isLogined()){
             unset($_SESSION['Login']);
+            Funcs::Redirect('/');
         }
     }
 

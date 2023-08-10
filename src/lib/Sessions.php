@@ -28,7 +28,7 @@ class Sessions{
             $uuid = $_SESSION['Login']['Uuid'];
             $Session_id = $_SESSION['Login']['Session_id'];
 
-            if(mysqli_num_rows($this->db->query("SELECT * FROM `users_sessions` WHERE `Uuid` = '$uuid' AND `Session_id` = '$Session_id'")) <= 0){
+            if(mysqli_num_rows($this->db->query("SELECT * FROM `users_sessions` WHERE `Uuid` = '$uuid' AND `Session_id` = '$Session_id' AND `Status` = 1")) <= 0){
                 $this->User->Logout();
             }
         }

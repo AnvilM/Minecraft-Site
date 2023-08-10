@@ -32,8 +32,14 @@ class AccountModel extends Model{
         
     }
 
-    public function close_session($session_id){
+    public function get_session($session_id){
+        $uuid = $_SESSION['Login']['Uuid'];
+        return $this->db->query("SELECT * FROM `users_sessions` WHERE `Uuid` = '$uuid' AND `Session_id` = '$session_id'");
+    }
 
+    public function close_session($session_id){
+        $uuid = $_SESSION['Login']['Uuid'];
+        $this->db->query("UPDATE `users_sessions` SET `Status` = 0  WHERE `Uuid` = '$uuid' AND `Session_id` = '$session_id'");
     }
 
     public function close_all_sessions(){

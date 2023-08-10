@@ -35,6 +35,21 @@ Class AccountController extends Controller{
         $this->View->render(['sessions' => $sessions]);
     }
 
+    public function Security_Sessions_AboutAction(){
+        if(!isset($_GET['session_id']) || $_GET['session_id'] == ''){Funcs::Redirect('/Account/Security/Sessions');}
+        $session = mysqli_fetch_all($this->Model->get_session($_GET['session_id']));
+        if(count($session) <= 0){Funcs::Redirect('/Account/Security/Sessions');}
+
+        $this->View->render(['session' => $session]);
+    }
+
+    public function Security_Sessions_CloseAction(){
+        if(!isset($_GET['session_id']) || $_GET['session_id'] == ''){Funcs::Redirect('/Account/Security/Sessions');}
+
+        $this->Model->close_session($_GET['session_id']);
+        Funcs::Redirect('/Account/Security/Sessions');
+    }
+
     public function Security_Sessions_Close_AllAction(){
         $this->Model->close_all_sessions();
         Funcs::Redirect('/Account/Security');

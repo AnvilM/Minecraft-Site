@@ -26,6 +26,14 @@
                             <div class="text-vsm text-secondary">21***@gmail.com</div>
                         </div>
                     </div>
+
+                    <div class="el pointer text-nlh">
+                        <img src="{icon icon='mail'}" alt="" class="icon icon-pixel">
+                        <div class="text">
+                            <div class="text">Дополнительная почта</div>
+                            <div class="text-vsm text-secondary">Не привязана</div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="panel">
@@ -53,7 +61,7 @@
                             <div class="text-vsm text-secondary">Открыть список сессий</div>
                         </div>
                     </div>
-                    <div class="el pointer text-nlh" href="/Account/Security/Sessions/Close_All">
+                    <div class="el pointer text-nlh" onclick="Ajax('/Account/Security/Sessions/Close_All', 'post')">
                         <img src="{icon icon='exit-warning'}" alt="" class="icon icon-pixel">
                         <div class="text">
                             <div class="text text-warning">Завершить сеансы</div>

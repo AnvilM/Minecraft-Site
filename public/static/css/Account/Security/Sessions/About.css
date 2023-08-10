@@ -1,0 +1,38 @@
+.panel > .el{
+    display: flex;
+    flex-direction: column;
+}
+
+.el > .header{
+    text-align: center;
+}
+
+.el > .header > .icon{
+    width: 64px;
+    height: 64px;
+}
+
+.el > .header > .text > * + *{
+    margin-top: 5px;
+}
+
+.el > .header > * + *{
+    margin-top: 20px;
+}
+
+.el > .h-line-separate{
+    margin:20px 0;
+}
+
+.el > .body{
+    align-self: flex-start;
+}
+
+.el > .body > * + *{
+    margin-top: 20px;
+}
+
+.el > .button{
+    height: 50px;
+    width: calc(100% - 50px);
+}

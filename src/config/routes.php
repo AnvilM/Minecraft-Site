@@ -84,7 +84,26 @@ $routes = [
         'Route' => 'Account/Security/Sessions',
         'Controller' => 'Account',
         'Action' => 'Security_Sessions',
-        'View' => 'Security/Sessions',
+        'View' => 'Security/Sessions/Index',
+        'Middlewares' => [
+            'Auth'
+        ]
+    ],
+
+    [
+        'Route' => 'Account/Security/Sessions/About',
+        'Controller' => 'Account',
+        'Action' => 'Security_Sessions_About',
+        'View' => 'Security/Sessions/About',
+        'Middlewares' => [
+            'Auth'
+        ]
+    ],
+
+    [
+        'Route' => 'Account/Security/Sessions/Close',
+        'Controller' => 'Account',
+        'Action' => 'Security_Sessions_Close',
         'Middlewares' => [
             'Auth'
         ]

@@ -46,7 +46,7 @@
                         <div class="text-rus text-secondary">Другие сеансы</div>
                     </div>
                     {foreach from=$vars.sessions.o_sessions item=session}
-                        <div class="el pointer text-nlh">
+                        <div class="el pointer text-nlh" href = "/Account/Security/Sessions/About?session_id={$session.1}">
                             {if {isMobile device=$session.5}}
                                 {if $session.7 == 1}<img src="{icon icon='phone-active'}" alt="" class="icon icon-pixel">
                                 {else}<img src="{icon icon='phone'}" alt="" class="icon icon-pixel">
