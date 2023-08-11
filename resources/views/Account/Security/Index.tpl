@@ -40,7 +40,7 @@
                     <div class="title text-nlh">
                         <div class="text-rus text-sm">Способы входа</div>
                     </div>
-                    <div class="el pointer text-nlh">
+                    <div class="el pointer text-nlh" href="/Account/Security/Password/Reset">
                         <img src="{icon icon='lock'}" alt="" class="icon icon-pixel">
                         <div class="text">
                             <div class="text">Пароль</div>

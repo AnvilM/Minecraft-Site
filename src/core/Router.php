@@ -22,13 +22,13 @@ Class Router{
                     $controller = new $controller_path($this->params);
                     $controller->$action();            
                 }else{
-                    echo 'err';
+                    echo 'err action';
                 }
             }else{
-                echo 'err';
+                echo 'err controller';
             }
         }else{
-            echo 'err';
+            echo 'err route';
         }
     }
    

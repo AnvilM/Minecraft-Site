@@ -24,6 +24,7 @@ $('form.signup').submit(function(e){
     }
     else{
         $(this).find('input').removeClass('err-input')
+        $(this).find('.err').text('')
         if(Res == 'Login not specified'){$(this).find('input[name="Login"]').addClass('err-input')}
         if(Res == 'Email not specified'){$(this).find('input[name="Email"]').addClass('err-input')}
         if(Res == 'Password not specified'){$(this).find('input[name="Password"]').addClass('err-input')}

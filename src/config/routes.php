@@ -119,6 +119,29 @@ $routes = [
     ],
 
 
+
+
+
+    [
+        'Route' => 'Account/Security/Password/Reset',
+        'Controller' => 'Account',
+        'Action' => 'Security_Password_Reset',
+        'View' => 'Security/Password/Reset',
+        'Middlewares' => [
+            'Auth'
+        ]
+    ],
+
+    [
+        'Route' => 'Account/Security/Password/ResetPOST',
+        'Controller' => 'Account',
+        'Action' => 'Security_Password_ResetPOST',
+        'Middlewares' => [
+            'Auth'
+        ]
+    ],
+
+
     [
         'Route' => 'Account/Stats',
         'Controller' => 'Account',
